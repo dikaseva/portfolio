@@ -1,6 +1,10 @@
 <template>
   <div id="app">
+
+    <!-- start sidebar menu -->
     <Sidebar :message="message"/>
+    <!-- end sidebar menu -->
+    
     <div class="wrap">
       <div class="main-hero">
         <div class="hero">

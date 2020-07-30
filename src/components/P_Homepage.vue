@@ -14,7 +14,7 @@
       <p>He is someone who loves clean and simple design with seamless interaction &amp; a pixel perfect mindset.</p>
       <p>A CSS wizard, have strong ability to manipulates CSS &amp; HTML into amazing layouts with the most possible micro-interactions.</p>
       <p>A fan of <strong>Codrops</strong>, <strong>Medium</strong> &amp; <strong>Awwwards Blog</strong>.</p>
-  </article>
+  </article>  
   </div>
   <!--end about-->
 
@@ -81,7 +81,7 @@
     <h3 class="title-summary">Some of results</h3>
       <div class="works-container">
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(0)">
+        <a class="thumbnail" @click="openModal(0)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/rasatlaw.jpg" alt="">
           </div>
@@ -92,7 +92,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(1)">
+        <a class="thumbnail" @click="openModal(1)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/musinlawson.jpg" alt="">
           </div>
@@ -100,7 +100,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(2)">
+        <a class="thumbnail" @click="openModal(2)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/teammates.jpg" alt="">
           </div>
@@ -108,7 +108,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(3)">
+        <a class="thumbnail" @click="openModal(3)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/printhink.jpg" alt="">
           </div>
@@ -116,7 +116,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(4)">
+        <a class="thumbnail" @click="openModal(4)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/buzzbuddies.jpg" alt="">
           </div>
@@ -124,7 +124,7 @@
         <!-- end -->
 
          <!-- start -->
-        <a class="thumbnail" @click="toggleModal(5)">
+        <a class="thumbnail" @click="openModal(5)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/sicepat.jpg" alt="">
           </div>
@@ -132,7 +132,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(6)">
+        <a class="thumbnail" @click="openModal(6)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/hanako.jpg" alt="">
           </div>
@@ -140,7 +140,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(7)">
+        <a class="thumbnail" @click="openModal(7)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/sentralcargo.jpg" alt="">
           </div>
@@ -148,7 +148,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(8)">
+        <a class="thumbnail" @click="openModal(8)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/jalankece.jpg" alt="">
           </div>
@@ -156,7 +156,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(9)">
+        <a class="thumbnail" @click="openModal(9)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/domusalba.jpg" alt="">
           </div>
@@ -164,7 +164,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(10)">
+        <a class="thumbnail" @click="openModal(10)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/ekoproperti.jpg" alt="">
           </div>
@@ -172,7 +172,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(11)">
+        <a class="thumbnail" @click="openModal(11)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/flightmaster.jpg" alt="">
           </div>
@@ -180,7 +180,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(12)">
+        <a class="thumbnail" @click="openModal(12)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/graphdes2.jpg" alt="">
           </div>
@@ -188,7 +188,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(13)">
+        <a class="thumbnail" @click="openModal(13)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/maimilu.jpg" alt="">
           </div>
@@ -196,7 +196,7 @@
         <!-- end -->
 
         <!-- start -->
-        <a class="thumbnail" @click="toggleModal(14)">
+        <a class="thumbnail" @click="openModal(14)">
           <div class="project-img">
             <img src="../assets/works_thumbnail/mahanair.jpg" alt="">
           </div>
@@ -617,7 +617,8 @@
                     
                   </div>
 
-                  <button class="modal-close" @click="showModal = false"><i class="icon-close"></i></button>
+                  <!-- <button class="modal-close" @click="showModal = false"><i class="icon-close"></i></button> -->
+                  <button class="modal-close" @click="closeModal"><i class="icon-close"></i></button>
                   <button class="modal-nav is-left" v-if="activeImage !== 0" @click="activeImage = activeImage - 1"><i class="icon-angle-left"></i></button>
                   <button class="modal-nav is-right" v-if="activeImage < 14" @click="activeImage = activeImage + 1"><i class="icon-angle-right"></i></button>
                         </div>
@@ -690,13 +691,14 @@
 </template>
 
 <script>
+
 export default {
-  name: 'HelloWorld',
+  name: 'dikaseva',
   data () {
     el: "modal"
     return {
       activeImage: 0,
-      showModal: false,
+      showModal: false
     }
   },
   
@@ -707,9 +709,14 @@ export default {
 
     window.scrollTo(0, top);
   },
-  toggleModal(idx) {
+  openModal(idx) {
     this.activeImage = idx;
-    this.showModal = true
+    this.showModal = true;
+    document.documentElement.style.overflow = 'hidden';
+  },
+  closeModal(){
+    this.showModal = false;
+    document.documentElement.style.overflow = 'auto';
   }
 }
   
@@ -718,298 +725,289 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style lang="scss">
+<style>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .25s;
+  transition: opacity 0.25s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter, .fade-leave-to {
+  /* .fade-leave-active below version 2.1.8 */
   opacity: 0;
 }
-.section-homepage,
-.section-about,
-.section-skills,
-.section-works,
-.section-photo{
-    width:100%;
-    padding:60px 40px 40px 40px;
-    min-height:calc(100vh - 50px);
-    position: relative;
-    img{
-        display:block;
-        margin:auto;
-        max-width:100%;
-    }
+.section-homepage, .section-about, .section-skills, .section-works, .section-photo {
+  width: 100%;
+  padding: 60px 40px 40px 40px;
+  min-height: calc(100vh - 50px);
+  position: relative;
 }
-.section-homepage{
-  min-height:100vh;
-  margin-top:-50px;
-  padding-top:40px;
+.section-homepage img, .section-about img, .section-skills img, .section-works img, .section-photo img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
-.section-trivia{
-    width:100%;
-    padding:40px 40px 0px 40px;
-    text-align: center;
-    border-top:solid 1px #ddd;
+.section-homepage {
+  min-height: 100vh;
+  margin-top: -50px;
+  padding-top: 40px;
 }
-.photo-profile{
-  border-radius:100px;
+.section-trivia {
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+  border-top: solid 1px #ddd;
 }
-  .outer {
+.photo-profile {
+  border-radius: 100px;
+}
+.outer {
   width: 100%;
   height: 100%;
-  display: table; }
-
+  display: table;
+}
 .middle {
   display: table-cell;
-  vertical-align: middle; }
-
+  vertical-align: middle;
+}
 .inner {
   display: block;
-  text-align: center; }
+  text-align: center;
+}
 .modal {
-  background:rgba(black, .5);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
-  padding:50px;
+  padding: 50px;
   overflow: auto;
-  visibility: visible; }
-.modal-close{
-  //border:solid 1px red;
+  visibility: visible;
+}
+.modal-close {
   position: fixed;
   z-index: 8888;
-  top:0;
-  right:0;
-  width:50px;
-  height:50px;
-  background:white;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: white;
   font-size: 2.2em;
-  border:none;
-  transition: font-size .15s ease-out;
-  &:hover{
-    cursor: pointer;
-    background:white - 20;
-    font-size:1.8em;
-  }
+  border: none;
+  transition: font-size 0.15s ease-out;
 }
-.modal-nav{
-  border:none;
-  width:40px;
-  height:50px;
+.modal-close:hover {
+  cursor: pointer;
+  background: #ebebeb;
+  font-size: 1.8em;
+}
+.modal-nav {
+  border: none;
+  width: 40px;
+  height: 50px;
   position: absolute;
-  top:0;
-  bottom:0;
-  margin:auto;
-  font-size:1.5em;
-  transition:.15s ease-out;
-  &:hover{
-    cursor: pointer;
-    background:white - 20;
-  }
-  &.is-left{
-    left:50px;
-  }
-  &.is-right{
-    right:50px;
-  }
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 1.5em;
+  transition: 0.15s ease-out;
+}
+.modal-nav:hover {
+  cursor: pointer;
+  background: #ebebeb;
+}
+.modal-nav.is-left {
+  left: 50px;
+}
+.modal-nav.is-right {
+  right: 50px;
 }
 .modal-container {
-  padding: 40px; 
-  background:white;
+  padding: 40px;
+  background: white;
   min-height: calc(100vh - 100px);
-  }
-  .modal-content{
-    //border:solid 1px red;
-    position: relative;
-    display:grid;
-    grid-gap: 40px;
-    grid-template-columns: 72% auto;
-    min-height: calc(100vh - 180px);
-  }
-@media all and (max-width:800px){
+}
+.modal-content {
+  position: relative;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 72% auto;
+  min-height: calc(100vh - 180px);
+}
+@media (max-width: 800px) {
   .modal {
-  background:white;
-  padding:0px;
+    background: white;
+    padding: 0px;
   }
   .modal-container {
-  padding: 40px;
-  min-height: 100vh;
+    padding: 40px;
+    min-height: 100vh;
   }
-  .modal-nav{
-  &.is-left{
-    left:0px;
+  .modal-nav.is-left {
+    left: 0px;
   }
-  &.is-right{
-    right:0px;
+  .modal-nav.is-right {
+    right: 0px;
+  }
+  .modal-close {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+  }
+  .modal-close:hover {
+    font-size: 2em;
   }
 }
-.modal-close{
-  width:40px;
-  height:40px;
-  text-align:center;
-  font-size: 2em;
-  &:hover{
-    font-size:2em;
-  }
+.project-img {
+  display: grid;
+  align-content: space-evenly;
 }
+.project-detail {
+  text-align: left;
+  position: relative;
+  height: 100%;
+  background: #f8f8f8;
+  padding: 20px;
 }
-  .project-img{
-    display:grid;
-    align-content: space-evenly;
-  }
-  .project-detail{
-    text-align: left;
-    position: relative;
-    height:100%;
-    background:#f8f8f8;
-    padding:20px;
-    p strong{
-      letter-spacing:.1em;
-    }
-  }
-  .project-title{
-    font-weight: 300;
-    font-size:3em;
-    line-height: 1em;
-    span{
-      display: block;
-      opacity:.54;
-      font-size:.8em;
-      margin:10px 0 0 0;
-      line-height: 1em;
-    }
-  }
-  .project-task{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    li{
-      display: inline-block;
-    }
-    img{
-      max-width: 64px;
-      opacity: .75;
-      margin-right: 5px;
-      &:hover{
-        opacity: .9;
-      }
-    }
-  }
-  .skill{
-    width:100%;
-    margin:10px 0;
-  }
-  .skill p{
-    margin:0;
-  }
-  .skill-bar{
-    width:100%;
-    height:15px;
-    border-radius:10px;
-    background:#D8D8D8;
-    overflow: hidden;
-  }
-  .skill-bar span{
-    display:block;
-    height:15px;
-    background:#242424;
-  }
-  .etc h4{
-    margin:40px 0 10px 0;
-    padding:0;
-    line-height:1em;
-  }
-  .etc p{
-    margin:0;
-  }
-
+.project-detail p strong {
+  letter-spacing: 0.1em;
+}
+.project-title {
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 1em;
+}
+.project-title span {
+  display: block;
+  opacity: 0.54;
+  font-size: 0.8em;
+  margin: 10px 0 0 0;
+  line-height: 1em;
+}
+.project-task {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.project-task li {
+  display: inline-block;
+}
+.project-task img {
+  max-width: 64px;
+  opacity: 0.75;
+  margin-right: 5px;
+}
+.project-task img:hover {
+  opacity: 0.9;
+}
+.skill {
+  width: 100%;
+  margin: 10px 0;
+}
+.skill p {
+  margin: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  background: #D8D8D8;
+  overflow: hidden;
+}
+.skill-bar span {
+  display: block;
+  height: 15px;
+  background: #242424;
+}
+.etc h4 {
+  margin: 40px 0 10px 0;
+  padding: 0;
+  line-height: 1em;
+}
+.etc p {
+  margin: 0;
+}
 .flex-container {
-    width:100%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
 }
 .flex-6 {
   width: 50%;
 }
-.flex-6:first-child{
-  padding-right:20px;
+.flex-6:first-child {
+  padding-right: 20px;
 }
-.flex-6:last-child{
-  padding-left:20px;
+.flex-6:last-child {
+  padding-left: 20px;
 }
-@media all and (max-width:800px){
-  .flex-container{
-    display:block;
+@media (max-width: 800px) {
+  .flex-container {
+    display: block;
   }
   .flex-6 {
-  width: 100%;
+    width: 100%;
   }
-  .flex-6:first-child{
-    padding-right:0;
+  .flex-6:first-child {
+    padding-right: 0;
   }
-  .flex-6:last-child{
-    padding-left:0;
+  .flex-6:last-child {
+    padding-left: 0;
   }
 }
-.contact{
+.contact {
   list-style-type: none;
-  margin:0;
-  padding:0;
-  li{
-    margin:0;
-    padding:0;
-    display: inline;
-  }
-  a{
-    display:inline-block;
-    padding:20px 10px;
-    text-decoration:none;
-    font-size:2em;
-    color:rgba(black,.57);
-  }
+  margin: 0;
+  padding: 0;
 }
-.thumbnail{
-  // border:solid 1px red;
+.contact li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.contact a {
+  display: inline-block;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.57);
+}
+.thumbnail {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  img{
-        -webkit-transition: all ease .2s;
-    -moz-transition: all ease .2s;
-    -o-transition: all ease .2s;
-    transition: all ease .2s;
-  }
-  &:hover{
-    img{
-      transform: scale(1.1);
-    }
-  }
 }
-.warning{
-  padding:20px;
-  //background:rgba(black, .05);
-  text-align:center;
+.thumbnail img {
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+.thumbnail:hover img {
+  transform: scale(1.1);
+}
+.warning {
+  padding: 20px;
+  text-align: center;
   font-style: italic;
-  border:1px dashed orangered;
-  strong{
-    color:orangered;
+  border: 1px dashed orangered;
+}
+.warning strong {
+  color: orangered;
+}
+ul {
+  margin: 0;
+}
+.pad-b {
+  padding-bottom: 40px;
+}
+@media (max-width: 800px) {
+  .modal-content {
+    grid-template-columns: 100%;
+  }
+  .m-hide {
+    display: none;
   }
 }
-ul{
-  margin:0;
-}
-.pad-b{
-  padding-bottom:40px;
-}
- @media all and (max-width:800px){
-    .modal-content{
-      grid-template-columns:100%;
-    }
-    .m-hide{
-      display:none;
-    }
-  }
+
 </style>
