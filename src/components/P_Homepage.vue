@@ -621,9 +621,9 @@
                   </div>
 
                   <!-- <button class="modal-close" @click="showModal = false"><i class="icon-close"></i></button> -->
-                  <button class="modal-close" @click="closeModal"><i class="icon-close"></i></button>
-                  <button class="modal-nav is-left" v-if="activeImage !== 0" @click="activeImage = activeImage - 1"><i class="icon-angle-left"></i></button>
-                  <button class="modal-nav is-right" v-if="activeImage < 14" @click="activeImage = activeImage + 1"><i class="icon-angle-right"></i></button>
+                  <button class="modal-close" @click="closeModal" v-on:keyup.esc="closeModal"><i class="icon-close"></i></button>
+                  <button class="modal-nav is-left" v-if="activeImage !== 0" @click="activeImage = activeImage - 1" v-on:keyup.left="activeImage = activeImage -= 1"><i class="icon-angle-left"></i></button>
+                  <button class="modal-nav is-right" v-if="activeImage < 14" @click="activeImage = activeImage + 1" v-on:keyup.right="activeImage = activeImage += 1"><i class="icon-angle-right"></i></button>
                         </div>
             </div>
           </div>
@@ -838,6 +838,9 @@ export default {
   /* min-height: calc(100vh - 180px); */
   height: 100%;
 }
+.modal-content > .project-img{
+  grid-row-gap: 40px;
+}
 @media (max-width: 800px) {
   .modal {
     background: white;
@@ -868,9 +871,8 @@ export default {
   }
 }
 .project-img {
-  /* display: grid; */
-  align-content: space-evenly;
-  /* height: 100%; */
+  display: grid;
+  min-height: 100%;
   order: 2;
   overflow: auto;
 }
