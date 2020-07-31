@@ -28,7 +28,7 @@
             display: inline-block;
             line-height:30px;
             padding:0 10px;
-            color:$c-font + 50;
+            color:darken($c-font, 50);
             font-size:13px;
             font-family:'Courier New', Courier, monospace;
             text-decoration:none;
@@ -43,7 +43,7 @@
                 display: inline-block;
             }
             &:hover{
-                color:$c-font - 20;
+                color:darken($c-font, 20);
             }
         }
     }
@@ -126,7 +126,7 @@
             //transition: background .2s;
         }
         &:hover{
-            color:$c-font + 50;
+            color:darken($c-font, 50);
             &::after{
                 width:100%;
                 background:#e2e2e2;
@@ -137,7 +137,7 @@
             color:$c-font;
             &::after{
                 width:100%;
-                background:#e2e2e2 - 40;
+                background:darken(#e2e2e2, 40);
             }
         }
         &.isactive{

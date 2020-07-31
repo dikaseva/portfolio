@@ -2,7 +2,10 @@
 <div>
   <!--start homepage-->
   <div id="home" class="section-homepage is-centered m-hide">
-    <img src="./../assets/theleaf.jpg">
+    <!-- <img src="./../assets/theleaf.jpg"> -->
+    <div style="background:#f9f9f9;width:100%;text-align:center;">
+      <img style="max-height: 70vh;filter: sepia(50%);" src="./../assets/dika.png">
+    </div>
   </div>
   <!--end homepage-->
 
@@ -824,14 +827,16 @@ export default {
 .modal-container {
   padding: 40px;
   background: white;
-  min-height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  overflow: hidden;
 }
 .modal-content {
   position: relative;
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: 72% auto;
-  min-height: calc(100vh - 180px);
+  grid-template-columns: auto 72%;
+  /* min-height: calc(100vh - 180px); */
+  height: 100%;
 }
 @media (max-width: 800px) {
   .modal {
@@ -841,6 +846,10 @@ export default {
   .modal-container {
     padding: 40px;
     min-height: 100vh;
+    overflow: auto;
+  }
+  .modal-content{
+    height: auto;
   }
   .modal-nav.is-left {
     left: 0px;
@@ -859,8 +868,11 @@ export default {
   }
 }
 .project-img {
-  display: grid;
+  /* display: grid; */
   align-content: space-evenly;
+  /* height: 100%; */
+  order: 2;
+  overflow: auto;
 }
 .project-detail {
   text-align: left;
@@ -868,6 +880,7 @@ export default {
   height: 100%;
   background: #f8f8f8;
   padding: 20px;
+  order: 1;
 }
 .project-detail p strong {
   letter-spacing: 0.1em;
@@ -976,6 +989,9 @@ export default {
   display: block;
   overflow: hidden;
   cursor: pointer;
+}
+.thumbnail .project-img{
+  overflow: hidden;
 }
 .thumbnail img {
   -webkit-transition: all ease 0.2s;
