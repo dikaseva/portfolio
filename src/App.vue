@@ -2,19 +2,28 @@
   <div id="app">
 
     <!-- start sidebar menu -->
-    <Sidebar :message="message"/>
+    <Sidebar />
     <!-- end sidebar menu -->
     
     <div class="wrap">
+      
       <div class="main-hero">
         <div class="hero">
           <h1 class="aside-heading">DIKA <br> <span>SOUL</span> <br> SEVA</h1>
         <h2 class="aside-subheading">WEB, UI &amp; UX DESIGNER</h2>
         </div>
       </div>
+
       <div class="main-view">
-        <!--view start-->
-        <router-view/>
+        <Hero />
+        <About />
+        <Skills />
+        <Works />
+        <Photography />
+        <Footer />
+
+         <!--view start-->
+        <!-- <router-view/> -->
         <!--view end-->
       </div>
     </div>
@@ -24,14 +33,26 @@
 
 <script>
 import Sidebar from '@/components/Menu'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Skills from '@/components/Skills'
+import Works from '@/components/Works'
+import Photography from '@/components/Photography'
+import Footer from '@/components/Footer'
 export default {
   name: 'App',
   components: {
-    Sidebar
+    Sidebar,
+    Hero,
+    About,
+    Skills,
+    Works,
+    Photography,
+    Footer
   },
   data() {
     return {
-      //message: 'some message'
+      // hello: 'some helo'
     }
   }
 }
