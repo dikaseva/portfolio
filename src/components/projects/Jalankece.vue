@@ -30,7 +30,7 @@ export default{
 
       // lib
       role: 'Role:',
-      roleDesign: 'Design Mockups',
+      roleDesign: 'Design',
       roleConvert: 'Convert HTML & CSS',
       rolePhoto: 'Photograph',
       roleWordpress: 'Wordpress PHP',

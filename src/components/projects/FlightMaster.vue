@@ -12,9 +12,9 @@
          <p>{{link}} <a href="#" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
-               <img src="http://dikaseva.com/img/works_large/flightmaster_win8.jpg" alt="">
-               <img src="http://dikaseva.com/img/works_large/flightmaster_win8_2.jpg" alt="">
-               <img src="http://dikaseva.com/img/works_large/flightmaster_win8.jpg" alt="">
+               <img class="p-t" src="http://dikaseva.com/img/works_large/flightmaster_win8.jpg" alt="">
+               <img class="p-t" src="http://dikaseva.com/img/works_large/flightmaster_win8_2.jpg" alt="">
+               <img class="p-t" src="http://dikaseva.com/img/works_large/flightmaster_win8.jpg" alt="">
             </div>
          </div>
       </article>
@@ -30,7 +30,7 @@ export default{
 
       // lib
       role: 'Role:',
-      roleDesign: 'Design Mockups',
+      roleDesign: 'Design',
       roleConvert: 'Convert HTML & CSS',
       rolePhoto: 'Photograph',
       roleWordpress: 'Wordpress PHP',

@@ -307,7 +307,11 @@ a{
     //   font-size: 16px;;
     // }
   }
- 
+ .grid-img{
+   section{
+     margin: 40px 0;
+   }
+ }
   @media (max-width: 800px) {
     .modal {
       background: white;
@@ -504,4 +508,15 @@ a{
     }
   }
 
- 
+ .p-t{
+   padding-top: 10px;
+ }
+ .p-r{
+  padding-right: 10px;
+}
+.p-b{
+  padding-bottom: 10px;
+}
+.p-l{
+  padding-left: 10px;
+}

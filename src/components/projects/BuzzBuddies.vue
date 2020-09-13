@@ -13,9 +13,9 @@
          <p>{{link}} <a href="#" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
-               <img src="http://dikaseva.com/img/works_large/buzzbuddies.jpg" alt="Buzzbuddies">
-               <img src="http://dikaseva.com/img/works_large/buzzbuddies2.jpg" alt="Buzzbuddies">
-               <img src="http://dikaseva.com/img/works_large/buzzbuddies3.jpg" alt="Buzzbuddies app">
+               <img class="p-t p-b" src="http://dikaseva.com/img/works_large/buzzbuddies.jpg" alt="Buzzbuddies">
+               <img class="p-t p-b" src="http://dikaseva.com/img/works_large/buzzbuddies2.jpg" alt="Buzzbuddies">
+               <img class="p-t p-b" src="http://dikaseva.com/img/works_large/buzzbuddies3.jpg" alt="Buzzbuddies app">
             </div>
          </div>
       </article>
@@ -31,7 +31,7 @@ export default{
 
       // lib
       role: 'Role:',
-      roleDesign: 'Design Mockups',
+      roleDesign: 'Design',
       roleConvert: 'Convert HTML & CSS',
       rolePhoto: 'Photograph',
       roleWordpress: 'Wordpress PHP',

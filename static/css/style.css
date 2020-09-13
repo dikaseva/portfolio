@@ -660,6 +660,10 @@ a:active {
   font-size: 18px;
 }
 
+.grid-img section {
+  margin: 40px 0;
+}
+
 @media (max-width: 800px) {
   .modal {
     background: white;
@@ -896,6 +900,21 @@ ul {
   .m-hide {
     display: none;
   }
+}
+.p-t {
+  padding-top: 10px;
+}
+
+.p-r {
+  padding-right: 10px;
+}
+
+.p-b {
+  padding-bottom: 10px;
+}
+
+.p-l {
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

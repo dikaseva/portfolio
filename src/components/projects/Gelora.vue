@@ -1,6 +1,6 @@
 <template>
    <div class="work-content">
-       <header class="work-header">
+      <header class="work-header">
            <h4>{{projectTitle}}</h4>
        </header>
       <article>
@@ -10,10 +10,18 @@
             <span>{{roleDesign}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.dikaseva.com/sicepat" target="_blank">{{demo}}</a></p>
-         <div class="grid-img">
+         <p>{{link}} <a href="www.gelora.id" target="_blank">{{urlName}}</a></p>
+         <div class="work-img">
             <div>
-               <img src="http://dikaseva.com/img/works_large/sicepat.jpg" alt="">
+               <video loop controls autoplay>
+                  <source src="../../assets/works/gelora_720.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+            <div>
+               <img src="../../assets/works/gelora-1.jpg" alt="">
+               <img src="../../assets/works/gelora-2.jpg" alt="">
+               <img src="../../assets/works/gelora-3.jpg" alt="">
             </div>
          </div>
       </article>
@@ -24,8 +32,8 @@
 export default{
    data() {
     return {
-      projectTitle: 'Sicepat Ekspres',
-      urlName: '',
+      projectTitle: 'Gelora',
+      urlName: 'gelora.id',
 
       // lib
       role: 'Role:',
