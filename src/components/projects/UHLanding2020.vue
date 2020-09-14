@@ -10,7 +10,7 @@
             <span>{{roleDesign}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.urbanhire.com" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="https://www.urbanhire.com/" target="_blank">{{urlName}}</a></p>
          <div class="work-img">
             <div>
                <video loop controls autoplay>
@@ -21,14 +21,29 @@
             <div>
                <img src="../../assets/works/urbanhire_landing2020.jpg" alt="">
             </div>
-            <div class="row bg-navy-lighten-1">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_products.jpg" alt="">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_product_1.jpg" alt="">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_solutions.jpg" alt="">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_about.jpg" alt="">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_customer.jpg" alt="">
-               <img class="col-xs-6 top-xs" src="../../assets/works/uh_pricing.jpg" alt="">
-               <img class="col-xs-12 top-xs" src="../../assets/works/uh_col_1.jpg" alt="">
+            <div class="row bg-navy-lighten-1 top-xs">
+              <div class="col-xs-6">
+                <img src="../../assets/works/uh_products.jpg" alt="">
+              </div>
+              <div class="col-xs-6">
+                <img src="../../assets/works/uh_product_1.jpg" alt="">
+              </div>
+               <div class="col-xs-6">
+                <img src="../../assets/works/uh_solutions.jpg" alt="">
+              </div>
+               <div class="col-xs-6">
+                <img src="../../assets/works/uh_about.jpg" alt="">
+              </div>
+               <div class="col-xs-6">
+                <img src="../../assets/works/uh_customer.jpg" alt="">
+              </div>
+              <div class="col-xs-6">
+                <img src="../../assets/works/uh_pricing.jpg" alt="">
+              </div>
+              <div class="col-xs-12">
+                <img src="../../assets/works/uh_col_1.jpg" alt="">
+              </div>
+              
             </div>
          </div>
       </article>
@@ -57,6 +72,9 @@ export default{
 </script>
 
 <style scoped>
+img{
+  min-width: 100%;
+}
 .bg-navy-lighten-1{
    background: #8088A3;
 }

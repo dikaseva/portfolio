@@ -10,7 +10,7 @@
             <span>{{roleDesign}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.dikaseva.com/teammates" target="_blank">{{demo}}</a></p>
+         <p>{{link}} <a href="http://dikaseva.com/teammates/" target="_blank">{{demo}}</a></p>
          <div class="grid-img">
             <div>
                <img src="http://dikaseva.com/img/works_large/teammates-large.jpg" alt="Musin Lawson">

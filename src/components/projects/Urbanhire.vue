@@ -12,39 +12,66 @@
             <strong>Caution: </strong><span><i>Long contents ahead</i></span>
          </p>
          <div class="grid-img">
+           <hr>
+           <section>
+               <h3>Urbanstory</h3>
+               <p>Urbanhire Design System</p>
+               <p class="p-b">{{link}} <a href="https://design.urbanhire.com/" target="_blank">Urbanstory</a></p>
+               <div>
+               <video loop controls autoplay>
+                  <source src="../../assets/works/urbanstory_720.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+            </section>
+            <hr>
             <section>
                <h3>Urbanhire Recruitment Platform</h3>
                <p class="p-b">{{link}} <a href="https://pro.urbanhire.com/signin" target="_blank">ATS Login</a></p>
                <div class="row bg-img">
-                   <img class="col-xs-12" src="../../assets/works/uh_platform.png" alt="">
-                  <img class="col-xs-10 p-t-y-lg" src="../../assets/works/product-recruitment-platform.png" alt="">
+                 <div class="col-xs-12">
+                   <img src="../../assets/works/uh_platform.png" alt="">
+                 </div>
+                 <div class="col-xs-12">
+                   <div class="col-xs-10 p-t-y-lg col-xs-offset-1">
+                     <img src="../../assets/works/product-recruitment-platform.png" alt="">
+                   </div>
+                 </div>
+                   
+                  
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Urbanhire Recruitment Platform Mobile App</h3>
                <p class="p-b">{{link}} <a href="https://play.google.com/store/apps/details?id=com.urbanhire" target="_blank">Go to Google Play</a></p>
                <div class="row">
-                  <img class="col-xs-12 p-t-y-lg" src="../../assets/works/uhproapp.png" alt="">
+                  <div class="col-xs-12 p-t-y-lg">
+                    <img src="../../assets/works/uhproapp.png" alt="">
+                  </div>
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Urbanhire Job Portal</h3>
                <p class="p-b">{{link}} <a href="https://urbanhire.com/jobs" target="_blank">Job Search</a></p>
                <div class="row bg-img-2">
-                  <img class="col-xs-10 p-t-y-lg" src="../../assets/works/product-job-portal.png" alt="">
+                 <div class="col-xs-10 col-xs-offset-1 p-t-y-lg">
+                   <img src="../../assets/works/product-job-portal.png" alt="">
+                 </div> 
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Urbanhire Job Portal Mobile App</h3>
                <p class="p-b">{{link}} <a href="https://play.google.com/store/apps/details?id=com.project_urban" target="_blank">Go to Google Play</a></p>
                <div class="row">
-                  <img class="col-xs-12" src="../../assets/works/uhjsapp.png" alt="">
+                 <div class="col-xs-12">
+                   <img src="../../assets/works/uhjsapp.png" alt="">
+                 </div>
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Urbanhire Blog - Jobseeker &amp; Recruiter</h3>
                <p class="p-b">{{link}} <a href="https://www.urbanhire.com/blog" target="_blank">Jobseeker Blog</a> | <a href="https://resources.urbanhire.com/" target="_blank">Recruiter Blog</a></p>
@@ -53,20 +80,24 @@
                    <div class="col-xs-6"><img src="../../assets/works/uhblog_resources.jpg" alt=""></div>
                </div>
             </section>
-            
+            <hr>
             <section>
                <h3>Referral Program</h3> 
                <p class="p-b">{{link}} <a href="https://myreferral.urbanhire.com/" target="_blank">Referral Login</a></p>
                <div class="row bg-img">
-                  <img class="col-xs-10 p-t-y-lg" src="../../assets/works/product-referrals.png" alt="">
+                 <div class="col-xs-10 col-xs-offset-1 p-t-y-lg">
+                    <img src="../../assets/works/product-referrals.png" alt="">
+                 </div>
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Manpower Planning</h3>
                <br>
                <div class="row">
-                  <img class="col-xs-12" src="../../assets/works/uh_mpp.png" alt="">
+                  <div class="col-xs-12">
+                    <img src="../../assets/works/uh_mpp.png" alt="">
+                  </div>
                </div>
                <div class="row top-xs bg-img-3">
                   <div class="col-xs-6">
@@ -78,7 +109,9 @@
                   
                </div>
                <div class="row">
-                   <img class="col-xs-12" src="../../assets/works/uh_mpp3.png" alt="">
+                   <div class="col-xs-12">
+                     <img src="../../assets/works/uh_mpp3.png" alt="">
+                   </div>
                </div>
                <div class="row top-xs bg-img-3">
                   <div class="col-xs-6">
@@ -90,14 +123,14 @@
                   
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Online Assessments</h3>
                <br>
-               <div class="row">
-                  <img class="col-xs-12" src="../../assets/works/uh_assessment.png" alt="">
-               </div>
                <div class="row top-xs bg-img-5">
+                 <div class="col-xs-12">
+                   <img src="../../assets/works/uh_assessment.png" alt="">
+                 </div>
                   <div class="col-xs-6">
                       <img src="../../assets/works/uh_assessment1.png" alt="">
                   </div>
@@ -110,14 +143,14 @@
                   
                </div>
             </section>
-
+            <hr>
             <section>
                <h3>Urbanhire Enterprise</h3>
                <br>
-               <div class="row">
-                  <img class="col-xs-12" src="../../assets/works/uh_enterprise.png" alt="">
-               </div>
                <div class="row top-xs bg-img-4">
+                 <div class="col-xs-12">
+                   <img src="../../assets/works/uh_enterprise.png" alt="">
+                 </div>
                   <div class="col-xs-6">
                       <img src="../../assets/works/uh_enterprise2.png" alt="">
                   </div>
@@ -156,6 +189,9 @@ export default{
 </script>
 
 <style scoped>
+img{
+  min-width: 100%;
+}
 .bg-img{
     background: #8088A3;
 }

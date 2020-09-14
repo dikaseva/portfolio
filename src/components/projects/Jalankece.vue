@@ -11,7 +11,7 @@
             <span>{{roleConvert}}</span>,
             <span>{{roleWordpress}}</span>
          </p>
-         <p>{{link}} <a href="www.jalankece.com" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="http://www.jalankece.com/" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
                <img src="http://dikaseva.com/img/works_large/jalankece.jpg" alt="">

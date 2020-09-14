@@ -9,7 +9,7 @@
             <strong>{{role}} </strong>
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.domusalba.com" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="http://domusalba.com/" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
                <img class="p-t" src="http://dikaseva.com/img/works_large/domusalba.jpg" alt="">

@@ -709,6 +709,10 @@ a:active {
   .work-header {
     display: none;
   }
+
+  .work-content video {
+    width: 100%;
+  }
 }
 .project-img {
   display: grid;

@@ -10,11 +10,15 @@
             <span>{{roleDesign}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.gelora.id" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="https://www.gelora.id/" target="_blank">{{urlName}}</a></p>
          <div class="work-img">
             <div>
                <video loop controls autoplay>
                   <source src="../../assets/works/gelora_720.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+               <video loop controls autoplay>
+                  <source src="../../assets/works/gelora_venue_720.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                </video>
             </div>

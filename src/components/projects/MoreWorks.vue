@@ -12,10 +12,18 @@
             <section>
                <h3>3D Design Modeling</h3>
                <div class="row p-t">
-                  <img class="col-xs-12" src="http://dikaseva.com/img/works_large/mahanair.jpg" alt="">
-                  <img class="col-xs-4" src="http://dikaseva.com/img/works_large/mahanair2.jpg" alt="">
-                  <img class="col-xs-4" src="http://dikaseva.com/img/works_large/mahanair3.jpg" alt="">
-                  <img class="col-xs-4" src="http://dikaseva.com/img/works_large/airchina.jpg" alt="">
+                 <div class="col-xs-12">
+                   <img src="http://dikaseva.com/img/works_large/mahanair.jpg" alt="">
+                 </div>
+                 <div class="col-xs-4">
+                   <img src="http://dikaseva.com/img/works_large/mahanair2.jpg" alt="">
+                  </div>
+                 <div class="col-xs-4">
+                   <img src="http://dikaseva.com/img/works_large/mahanair3.jpg" alt="">
+                  </div>
+                  <div class="col-xs-4">
+                   <img src="http://dikaseva.com/img/works_large/airchina.jpg" alt="">
+                  </div>
                </div>
             </section>
             <hr>
@@ -23,7 +31,9 @@
                <h3>Navigatech</h3>
                <p>{{link}} <a href="http://navigatech.com/" target="_blank">navigatech.com</a></p>
                <div class="row">
-                  <img class="col-xs-9" src="http://dikaseva.com/img/works_large/navigatech.jpg" alt="">
+                  <div class="col-xs-10 col-xs-offset-1">
+                    <img src="http://dikaseva.com/img/works_large/navigatech.jpg" alt="">
+                  </div>
                </div>
             </section>
             <hr>
@@ -31,30 +41,44 @@
                <h3>Aerosource</h3> 
                <p>{{link}} <a href="http://www.aerostratos.com/aerosource/" target="_blank">Aerosource login</a></p>
                <div class="row">
-                  <img class="col-xs-9" src="http://dikaseva.com/img/works_large/aerosource.jpg" alt="">
-                  <img class="col-xs-6 p-r" src="http://dikaseva.com/img/works_large/airportviewer.jpg" alt="">
-                  <img class="col-xs-6 p-l" src="http://dikaseva.com/img/works_large/enrouteviewer.jpg" alt="">
+                 <div class="col-xs-10 col-xs-offset-1">
+                   <img src="http://dikaseva.com/img/works_large/aerosource.jpg" alt="">
+                 </div>
+                  <div class="col-xs-6 p-r">
+                    <img src="http://dikaseva.com/img/works_large/airportviewer.jpg" alt="">
+                  </div>
+                  <div class="col-xs-6 p-l">
+                    <img src="http://dikaseva.com/img/works_large/enrouteviewer.jpg" alt="">
+                  </div>
+                  
                </div>
             </section>
             <hr>
             <section>
                <h3>Fligth Progress Basic - App</h3>
                <div class="row">
-                  <img class="col-xs-8" src="http://dikaseva.com/img/works_large/fligthProgressBasic.jpg" alt="">
+                 <div class="col-xs-8">
+                  <img src="http://dikaseva.com/img/works_large/fligthProgressBasic.jpg" alt="">
+                 </div>
                   <div class="col-xs-4 p-l">
-                    <img class="col-xs-12" src="http://dikaseva.com/img/works_large/fligthProgressBasic_2.jpg" alt="">
-                    <img class="col-xs-12 p-t" src="http://dikaseva.com/img/works_large/fligthProgressBasic_3.jpg" alt=""> 
+                    <img src="http://dikaseva.com/img/works_large/fligthProgressBasic_2.jpg" alt="">
+                    <img class="p-t" src="http://dikaseva.com/img/works_large/fligthProgressBasic_3.jpg" alt=""> 
                   </div>
                </div>
             </section>
             <hr>
             <section>
                <h3>Orderanku</h3>
-               <p>{{link}} <a href="www.orderanku.com" target="_blank">orderanku.com</a></p>
+               <p>{{link}} <a href="http://orderanku.com/" target="_blank">orderanku.com</a></p>
                <br>
                <div class="row">
-                  <img class="col-xs-6 p-r" src="http://dikaseva.com/img/works_large/orderanku.jpg" alt="">
-                  <img class="col-xs-6 p-l" src="http://dikaseva.com/img/works_large/orderanku2.jpg" alt="">
+                 <div class="col-xs-6 p-r">
+                   <img src="http://dikaseva.com/img/works_large/orderanku.jpg" alt="">
+                 </div>
+                  <div class="col-xs-6 p-l">
+                    <img src="http://dikaseva.com/img/works_large/orderanku2.jpg" alt="">
+                  </div>
+                  
                </div>
             </section>
             <hr>
@@ -62,7 +86,10 @@
                <h3>Dive Indonesia</h3>
                <br>
                <div class="row">
-                  <img class="col-xs-9" src="http://dikaseva.com/img/works_large/divetripindonesia.jpg" alt="">
+                 <div class="col-xs-10 col-xs-offset-1">
+                   <img src="http://dikaseva.com/img/works_large/divetripindonesia.jpg" alt="">
+                 </div>
+                  
                </div>
             </section>
          </div>
@@ -93,6 +120,9 @@ export default{
 </script>
 
 <style scoped>
+img{
+  min-width: 100%;
+}
 .row {
   box-sizing: border-box;
   display: -ms-flexbox;

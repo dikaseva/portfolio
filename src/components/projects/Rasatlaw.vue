@@ -11,7 +11,7 @@
             <span>{{rolePhoto}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.rasatlaw.com" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="http://rasatlaw.com/" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
                <video loop controls autoplay>

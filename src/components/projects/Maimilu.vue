@@ -10,7 +10,7 @@
             <span>{{roleDesign}}</span>,
             <span>{{roleConvert}}</span>
          </p>
-         <p>{{link}} <a href="www.maimilu.com" target="_blank">{{urlName}}</a></p>
+         <p>{{link}} <a href="https://maimilu.com/" target="_blank">{{urlName}}</a></p>
          <div class="grid-img">
             <div>
                <video loop controls autoplay>
