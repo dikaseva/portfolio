@@ -85,6 +85,7 @@ export default {
     margin-left:-400px;
     position: fixed;
     z-index:999;
+    /* outline: solid 1px blue; */
 }
 .main-view{
     width:100%;
@@ -98,7 +99,7 @@ export default {
     .main-hero{
       margin-left:0;
       width:100%;
-      position: relative;
+      position: absolute;
     }
 }
 .aside-heading{
